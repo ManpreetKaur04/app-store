@@ -134,7 +134,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React development server
+    "http://localhost:3000","https://app-store-blue.vercel.app",  # React development server
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -143,6 +143,9 @@ REST_FRAMEWORK = {
 }
 CORS_ALLOW_CREDENTIALS = True  # Allow credentials (cookies)
 CSRF_COOKIE_HTTPONLY = False
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ["https://app-store-blue.vercel.app"]
 
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'

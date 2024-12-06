@@ -26,7 +26,12 @@
       {
         "src": "/(.*)",
         "dest": "/frontend/build/index.html"
+      },
+      {
+        "src": "/admin(.*)",
+        "dest": "/backend/admin$1"
       }
+      
     ]
   }
   
