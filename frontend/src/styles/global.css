@@ -1,0 +1,614 @@
+/* General styles for the entire app */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Role Selection component styles */
+.role-selection-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.role-selection-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.role-selection-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.role-selection-button:hover {
+    background-color: #0056b3;
+}
+/* User Options component styles */
+.user-options-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-options-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-options-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-options-input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-options-submit {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-options-submit:hover {
+    background-color: #218838;
+}
+
+.user-options-toggle {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.user-options-toggle:hover {
+    color: #0056b3;
+}
+/* Dashboard styles */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #271583;
+    color: #000000;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li:hover {
+    background-color: #555;
+}
+
+.sidebar-menu li:active {
+    background-color: #444;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.loading-text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 50px;
+}
+/* Home component styles */
+.home-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #402ec7;
+}
+
+.apps-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.apps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-info {
+    flex: 1;
+}
+
+.app-name {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #222;
+}
+
+.app-category {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.details-button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+}
+
+.loading-text,
+.no-apps-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+.app-logo {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.app-logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+
+/* General Container Styling */
+.app-details-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.app-details-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.upload-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* App Information */
+.app-details-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* File Upload Section */
+.file-upload {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+.file-input {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buttons */
+.submit-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.disabled-button {
+    background-color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Feedback Messages */
+.loading-text,
+.error-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.error-text {
+    color: #d9534f;
+}
+
+/* src/styles/global.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1, h3 {
+    color: #222;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Task list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+li img {
+    display: block;
+    max-width: 100px;
+    margin-top: 0.5rem;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+.text-red-500 {
+    color: #e53e3e;
+}
+
+/* Global Profile Styles */
+.profile-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.profile-container p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #555;
+    text-align: center;
+}
+
+.loading-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+}
+/* Points Component Styles */
+.points-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.points-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.points-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.points-container .font-semibold {
+    color: #007BFF; /* Highlight color for points */
+    font-weight: bold;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Admin Login Styles */
+.admin-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.admin-login-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.admin-login-form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-form div {
+    margin-bottom: 15px;
+}
+
+.admin-login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.admin-login-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.admin-login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-login-form button:hover {
+    background-color: #0056b3;
+}
+
+.admin-login-error {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+/* Admin Dashboard Styles */
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Sidebar Styling */
+.admin-dashboard nav {
+    width: 200px;
+    background-color: #3b3b98;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Main Content */
+.admin-dashboard .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 50px;
+}
+
+/* Container Styling */
+.admin-dashboard .container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder Image */
+.placeholder-image {
+    width: 100px;
+    height: 100px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Points Button */
+.points-button {
+    background-color: #44c27f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto; /* Align to the right */
+    display: block;
+    text-align: center;
+}
+
+.points-button:hover {
+    background-color: #37a466;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #ff8c42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #e57c35;
+}
+.add_app_form input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
